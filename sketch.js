@@ -5,13 +5,15 @@ let emitter;
 let repeller;
 let att;
 let att2;
+let att3
 
 function setup() {
   createCanvas(400, 400);
   emitter = new Emitter(width / 2, height/2);
   repeller = new Repeller(width / 2, 350);
-  att = new Attractor(20, height/2);
-  att2 = new Attractor(380, height/2);
+  att = new Attractor(20, 380);
+  att2 = new Attractor(380, 380);
+  att3 = new Attractor(200, 20)
 }
 
 function draw() {
@@ -31,9 +33,11 @@ function draw() {
   emitter.applyRepeller(repeller);
   emitter.applyAttractor(att);
   emitter.applyAttractor(att2);
+  emitter.applyAttractor(att3);
   emitter.run();
 
   repeller.show();
   att.show();
   att2.show();
+  att3.show();
 }

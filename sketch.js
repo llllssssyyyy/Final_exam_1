@@ -11,7 +11,7 @@ function setup() {
   emitter = new Emitter(width / 2, height/2);
   repeller = new Repeller(width / 2, 350);
   att = new Attractor(20, height/2);
-  att2 = new Attractor(200, height/2);
+  att2 = new Attractor(380, height/2);
 }
 
 function draw() {
@@ -30,7 +30,7 @@ function draw() {
   //{!1} Applying the repeller
   emitter.applyRepeller(repeller);
   emitter.applyAttractor(att);
-  emitter.applyAtrractor(att2);
+  emitter.applyAttractor(att2);
   emitter.run();
 
   repeller.show();

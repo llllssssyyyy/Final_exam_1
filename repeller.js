@@ -29,4 +29,8 @@ class Repeller {
     force.setMag(strength);
     return force;
   }
+
+  updatePosition(x,y) {
+    this.position.set(x,y);
+  }
 }

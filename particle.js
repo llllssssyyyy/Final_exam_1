@@ -12,7 +12,7 @@ class Particle {
     this.velocity = createVector(random(-1, 1), random(-1, 0));
     this.acceleration = createVector(0, 0);
     this.lifespan = 255.0;
-    this.color = color(random(255), random(255), random(255));
+    this.color = color(150,200,255);
   }
 
   run() {
